@@ -13,17 +13,14 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class ItemListComponent implements OnInit {
 
   itemsList: Array<object> = [];
-  currentRoute: any = '';
+  // currentRoute: any = '';
 
   constructor( private dataService: DataService, 
                private activatedRoute: ActivatedRoute, )  {  }
 
   ngOnInit() {
     this.itemsList = this.dataService.getItems();
-    // this.currentRoute = this.activatedRoute.params.subscribe(p => {
-    //   console.log("params", p);
-    // });
-    this.currentRoute = this.activatedRoute.snapshot.url.join('');
+//    this.currentRoute = this.activatedRoute.snapshot.url.join('');
   }
 
 

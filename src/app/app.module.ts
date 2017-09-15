@@ -20,16 +20,14 @@ const appRoutes: Routes = [
   { path: 'items-list', 
     component: ItemListComponent
   },
-//    children: [ 
-      { 
-        path: 'items-list/item/:id/:status', 
-        component: ItemComponent 
-      },
-      { 
-        path: '**', 
-        component: PageNotFoundComponent 
-      }
-// ]
+  { 
+    path: 'items-list/item/:id/:status', 
+    component: ItemComponent 
+  },
+  { 
+  path: '**', 
+  component: PageNotFoundComponent 
+  }
 ]
 
 @NgModule({

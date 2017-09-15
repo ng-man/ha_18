@@ -3,8 +3,8 @@
     max-width: 884px;
  }
  .item-card {
-   max-width: 300px;
-   margin-bottom: 50px; 
+   max-width: 260px;
+   /* margin-bottom: 50px;  */
  }
  .example-form {
      margin-bottom: 50px;
@@ -25,4 +25,9 @@
     font-size: 22px;
     font-weight: bold;
     color: darkcyan;
+ }
+
+ .img-title {
+     width: 70%;
+     height: 70%;
  }

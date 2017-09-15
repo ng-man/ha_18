@@ -28,7 +28,4 @@ export class ItemComponent implements OnInit {
     this.curStatus = status;
   }
 
-  // getItemDetails() {
-  //   this.dataService.getItemById(1);
-  // }
 }

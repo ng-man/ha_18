@@ -1,9 +1,9 @@
-<md-grid-list cols="2" >
+<md-grid-list cols="2">
   
   <md-grid-tile >
 
     <md-card class="item-card">
-      <img md-card-image src="{{ itemDetails.imgUrl }}">
+      <img md-card-image class="img-title" src="{{ itemDetails.imgUrl }}">
       <md-card-content>
         <md-card-title class="md-card-t">{{ itemDetails.title }}</md-card-title>
         <p *ngIf="curStatus == 'view'">Price: <b>{{ itemDetails.price }}</b></p>

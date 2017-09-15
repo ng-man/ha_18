@@ -49,10 +49,6 @@ getItems(): Array<object> {
 } 
 
 getItemById(id:number): Object {
-  // this.itemsList.forEach(function(item) {
-  //   console.log(item['id']);
-  // });
-  console.log('from data service: ', id);
   return this.itemsList[id-1];
 }
 
