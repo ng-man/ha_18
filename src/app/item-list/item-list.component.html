@@ -1,0 +1,31 @@
+<md-grid-list cols="4" rowHeight="500px">
+  
+  <md-grid-tile *ngFor="let item of itemsList">
+
+    <md-card class="item-card">
+      <img md-card-image src="{{ item.imgUrl }}">
+      <md-card-content>
+        <md-card-title>{{item.title}}</md-card-title>
+        <p><b>Proce: {{item.price}}</b></p>
+      </md-card-content>
+
+      <md-card-actions>
+        <button md-button><a routerLink="item/{{ item.id+'/view' }}">Review details</a></button>
+        <button md-button><a routerLink="item/{{ item.id+'/buy' }}">Buy</a></button>
+      </md-card-actions>
+
+    </md-card>
+ 
+  </md-grid-tile>
+
+</md-grid-list>
+
+<!-- <div *ngFor="let item of itemsList" style="width: 200px; height:200px; display: inline-block; border: 2px solid green;">qwerty
+  <p>Title: {{item.title}}</p>
+  <p>Decription: {{item.description}}</p>
+  <p>Year: {{item.price}}</p>
+  <button><a routerLink="item/{{ item.id+'/details' }}">Review details</a></button>
+  <button><a routerLink="item/{{ item.id+'/buy' }}">Buy</a></button>
+</div> -->
+
+<!-- <router-outlet></router-outlet> -->
